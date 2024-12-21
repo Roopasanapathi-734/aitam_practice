@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS Flexbox Example</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+    .flexbox{
+    background: url("pic1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300vh;
+    /* opacity: 0.6; */
+}
+    </style>
+  </head>
+  <body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+    <!-- Navigation Bar -->
+    <nav class="bg-slate-700 p-4 dark:bg-slate-800">
+      <div class="container mx-auto flex justify-between items-center">
+        <!-- Logo -->
+        <a href="#" class="text-white text-xl font-semibold">My Website</a>
+        <!-- Navigation Links -->
+        <ul class="flex space-x-4">
+          <li><a href="#home" class="text-gray-300 hover:text-white">Home</a></li>
+          <li><a href="#about" class="text-gray-300 hover:text-white">About</a></li>
+          <li><a href="#services" class="text-gray-300 hover:text-white">Services</a></li>
+          <li><a href="#contact" class="text-gray-300 hover:text-white">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mx-auto my-8">
+      <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800">
+        <!-- Image Section -->
+        <img
+          class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
+          src="pic1.jpg"
+          alt="Sample Image"
+          width="384"
+          height="512">
+        <!-- Content Section -->
+        <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+          <blockquote>
+            <p class="text-lg font-medium">
+              “Tailwind CSS is the only framework that I've seen scale
+              on large teams. It’s easy to customize, adapts to any design,
+              and the build size is tiny.”
+            </p>
+          </blockquote>
+          <figcaption class="font-medium">
+            <div class="text-sky-500 dark:text-sky-400">
+              Sarah Dayan
+            </div>
+            <div class="text-slate-700 dark:text-slate-500">
+              Staff Engineer, Algolia
+            </div>
+          </figcaption>
+        </div>
+      </figure>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-slate-700 text-gray-300 p-4 text-center dark:bg-slate-800">
+      &copy; 2024 My Website. All Rights Reserved.
+    </footer>
+  </body>
+</html>
