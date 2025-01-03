@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS position</title>
+</head>
+<!--1 top,bottom,left,right-->
+<!--1, static(default)-->
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        background-color: blueviolet;
+        border:2px solid black ;
+        padding: 40px;
+        margin: 25px;
+        height: 300px;
+    }
+    .box{
+        height: 45px;
+        width: 80vw;
+        padding: 10px;
+        margin: 15px;
+        border: 2px solid black;
+    }
+    .box1{
+        background-color: paleturquoise;
+        position: relative;
+        top: -50px;
+        left: 10px;
+
+    }
+    .box2{
+        background-color: rgb(245, 27, 173);
+        /*position:absolute ;
+        top: 0px;*/
+    }
+    .box3{
+        background-color: greenyellow;
+        position: fixed;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box box1">box 1</div>
+        <div class="box box2">box 2</div>
+        <div class="box box3">box 3</div>
+    </div>
+</body>
+</html>

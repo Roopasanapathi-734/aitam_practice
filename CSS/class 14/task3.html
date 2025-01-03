@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Comparison Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f9f9f9;
+        }
+
+        .comparison-table {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            max-width: 1200px;
+            gap: 16px;
+            padding: 16px;
+            box-sizing: border-box;
+        }
+
+        .product-column {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            min-width: 250px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+            padding: 16px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-header {
+            font-size: 1.5em;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+
+        .feature-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .feature-row:last-child {
+            border-bottom: none;
+        }
+
+        .feature-name {
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            .comparison-table {
+                flex-direction: column;
+            }
+
+            .product-column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="comparison-table">
+        <div class="product-column">
+            <div class="product-header">Product 1</div>
+            <div class="feature-row">
+                <div class="feature-name">Price:</div>
+                <div>$99</div>
+            </div>
+            <div class="feature-row">
+                <div class="feature-name">Availability:</div>
+                <div>In Stock</div>
+            </div>
+            <div class="feature-row">
+                <div class="feature-name">Rating:</div>
+                <div>4.5/5</div>
+            </div>
+        </div>
+        <div class="product-column">
+            <div class="product-header">Product 2</div>
+            <div class="feature-row">
+                <div class="feature-name">Price:</div>
+                <div>$129</div>
+            </div>
+            <div class="feature-row">
+                <div class="feature-name">Availability:</div>
+                <div>Out of Stock</div>
+            </div>
+            <div class="feature-row">
+                <div class="feature-name">Rating:</div>
+                <div>4.8/5</div>
+            </div>
+        </div>
+        <div class="product-column">
+            <div class="product-header">Product 3</div>
+            <div class="feature-row">
+                <div class="feature-name">Price:</div>
+                <div>$89</div>
+            </div>
+            <div class="feature-row">
+                <div class="feature-name">Availability:</div>
+                <div>In Stock</div>
+            </div>
+            <div class="feature-row">
+                <div class="feature-name">Rating:</div>
+                <div>4.3/5</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4 Cards</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.card p {
+  margin: 0 10px 20px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+  </style>
+</head>
+<body>
+  <div class="card-container">
+    <div class="card">
+      <img src="one.jpg" alt="Card 1 Image">
+      <h3>Nature</h3>
+      <p>People take pictures of nature because images of nature are among the most popular in art and photography.</p>
+    </div>
+    <div class="card">
+      <img src="two.jpg" alt="Card 2 Image">
+      <h3>Nature</h3>
+      <p>People take pictures of nature because images of nature are among the most popular in art and photography.</p>
+    </div>
+    <div class="card">
+      <img src="three.jpg" alt="Card 3 Image">
+      <h3>Nature</h3>
+      <p>People take pictures of nature because images of nature are among the most popular in art and photography.</p>
+    </div>
+    <div class="card">
+      <img src="four.jpg" alt="Card 4 Image">
+      <h3>Nature</h3>
+      <p>People take pictures of nature because images of nature are among the most popular in art and photography.</p>
+    </div>
+  </div>
+</body>
+</html>
