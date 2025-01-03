@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Glow Cards</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: url("pic5.jpg") no-repeat center center/cover;
+      line-height: 1.6;
+    }
+
+    /* Navbar */
+    nav {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow for Navbar */
+    }
+
+    nav h1 {
+      font-size: 1.8rem;
+      color: #fff;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #e52929;
+    }
+
+    /* Main Content */
+    .container {
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background: #ffffff;
+      color: #333;
+      border-radius: 12px;
+      overflow: hidden;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Basic Shadow */
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card h2 {
+      font-size: 1.5rem;
+      color: #df1111;
+      margin: 15px 0 10px;
+    }
+
+    .card p {
+      font-size: 1rem;
+      padding: 0 10px;
+    }
+
+    .card a {
+      display: inline-block;
+      margin: 15px 0;
+      padding: 10px 20px;
+      background: #ea0f29;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .card a:hover {
+      background: #e9121a;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px 8px rgba(0, 123, 255, 0.4); /* Hover Glow Effect */
+    }
+
+    /* Footer */
+    footer {
+      background: rgba(214, 23, 23, 0.8);
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 14px 6px rgba(194, 51, 51, 0.3); /* Shadow at Top of Footer */
+    }
+
+    footer a {
+      color: #ee1e41;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Additional Shadow Box Examples */
+    .shadow-box-examples {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .shadow-box {
+      width: 90%;
+      max-width: 600px;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      text-align: center;
+      font-size: 1rem;
+    }
+
+    .shadow-box.shadow-soft {
+      box-shadow: 0 2px 4px 40px rgba(0, 0, 0, 0.1); /* Soft Shadow */
+    }
+
+    .shadow-box.shadow-medium {
+      box-shadow: 0 4px 8px 40px rgba(0, 0, 0, 0.2); /* Medium Shadow */
+    }
+
+    .shadow-box.shadow-strong {
+      box-shadow: 0 6px 12px 40px rgba(0, 0, 0, 0.4); /* Strong Shadow */
+    }
+
+    .shadow-box.shadow-colored {
+      box-shadow: 10px 10px 10px 30px rgba(235, 41, 41, 0.5); /* Colored Glow */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <h1>Travel Glow</h1>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Destinations</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <!-- Card 1 -->
+    <div class="card">
+      <img src="pic1.jpeg" alt="Destination">
+      <h2>Bali, Indonesia</h2>
+      <p>Experience the lush jungles and serene beaches of Bali.</p>
+      <a href="#">Learn More</a>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <img src="pic2.jpeg" alt="Destination">
+      <h2>Paris, France</h2>
+      <p>Discover the city of love and its iconic Eiffel Tower.</p>
+      <a href="#">Learn More</a>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <img src="pic3.jpeg" alt="Destination">
+      <h2>Maldives</h2>
+      <p>Relax in overwater bungalows with turquoise waters.</p>
+      <a href="#">Learn More</a>
+    </div>
+  </div>
+
+  <!-- Additional Shadow Examples -->
+  <div class="shadow-box-examples">
+    <div class="shadow-box shadow-soft">This is a soft shadow box.</div>
+    <div class="shadow-box shadow-medium">This is a medium shadow box.</div>
+    <div class="shadow-box shadow-strong">This is a strong shadow box.</div>
+    <div class="shadow-box shadow-strong">This is a strong shadow box.</div>
+  </div>
+</body>
+</html>
